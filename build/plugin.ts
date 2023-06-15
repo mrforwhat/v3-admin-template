@@ -29,12 +29,16 @@ export const createVitePlugins = (env: ImportMetaEnv): PluginOption[]=>{
         AutoImport({
           dts: true,
           imports: ['vue','vue-router'],
-          resolvers: [ElementPlusResolver()] 
+          resolvers: [
+            ElementPlusResolver(),
+          ] 
         }),
         Components({
           dts: true,
-          dirs: ['src/components','src/pages/*/components'],
-          resolvers: [ElementPlusResolver()] 
+          dirs: ['src/components','src/pages/*/components','src/layout/components'],
+          resolvers: [
+            ElementPlusResolver(),
+          ] 
         }),
         viteVConsole({
           entry: path.resolve('src/main.ts'),

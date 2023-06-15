@@ -1,0 +1,140 @@
+{
+    "list": [
+        {
+            "path": "/home/index",
+            "name": "home",
+            "component": "/home/index",
+            "meta": {
+                "icon": "HomeFilled",
+                "title": "首页",
+                "isLink": "",
+                "isHide": false,
+                "isKeepAlive": true
+            }
+        },
+        {
+            "path": "/system",
+            "name": "system",
+            "redirect": "/system/account",
+            "meta": {
+                "icon": "Tools",
+                "title": "系统管理",
+                "isLink": "",
+                "isHide": false,
+                "isKeepAlive": true
+            },
+            "children": [
+                {
+                    "path": "/system/account",
+                    "name": "account",
+                    "component": "/system/account/index",
+                    "meta": {
+                        "icon": "Menu",
+                        "title": "账号管理",
+                        "isLink": "",
+                        "isHide": false,
+                        "isKeepAlive": true
+                    }
+                },
+                {
+                    "path": "/system/role",
+                    "name": "role",
+                    "component": "/system/role/index",
+                    "meta": {
+                        "icon": "Menu",
+                        "title": "角色管理",
+                        "isLink": "",
+                        "isHide": false,
+                        "isKeepAlive": true
+                    }
+                }
+            ]
+        },
+        {
+            "path": "/material",
+            "name": "material",
+            "redirect": "/material/market",
+            "meta": {
+                "icon": "HelpFilled",
+                "title": "物料管理",
+                "isLink": "",
+                "isHide": false,
+                "isKeepAlive": true
+            },
+            "children": [
+                {
+                    "path": "/material/market",
+                    "name": "market",
+                    "component": "/material/market/index",
+                    "meta": {
+                        "icon": "Menu",
+                        "title": "市集管理",
+                        "isLink": "",
+                        "isHide": false,
+                        "isKeepAlive": true
+                    }
+                },
+                {
+                    "path": "/material/phototxt",
+                    "name": "phototxt",
+                    "component": "/material/phototxt/index",
+                    "meta": {
+                        "icon": "Menu",
+                        "title": "图文管理",
+                        "isLink": "",
+                        "isHide": false,
+                        "isKeepAlive": true
+                    }
+                },
+                {
+                    "path": "/material/message",
+                    "name": "message",
+                    "component": "/material/message/index",
+                    "meta": {
+                        "icon": "Menu",
+                        "title": "资讯管理",
+                        "isLink": "",
+                        "isHide": false,
+                        "isKeepAlive": true
+                    }
+                }
+            ]
+        },
+        {
+            "path": "/order",
+            "name": "order",
+            "component": "/order/index",
+            "meta": {
+                "icon": "List",
+                "title": "订单管理",
+                "isLink": "",
+                "isHide": false,
+                "isKeepAlive": true
+            }
+        },
+        {
+            "path": "/ticket",
+            "name": "ticket",
+            "component": "/ticket/index",
+            "meta": {
+                "icon": "Ticket",
+                "title": "票券管理",
+                "isLink": "",
+                "isHide": false,
+                "isKeepAlive": true
+            }
+        },
+        {
+            "path": "/merchant",
+            "name": "merchant",
+            "component": "/merchant/index",
+            "meta": {
+                "icon": "Wallet",
+                "title": "商户管理",
+                "isLink": "",
+                "isHide": false,
+                "isKeepAlive": true
+            }
+        }
+    ]
+}

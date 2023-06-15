@@ -1,5 +1,5 @@
 <template>
- <div>主页</div>
+<div class="page">404</div>
 </template>
 <script setup lang="ts">
 
