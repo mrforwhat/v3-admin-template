@@ -44,6 +44,9 @@ const menuList = computed(()=>{
 }) 
 </script>
 <style lang="scss" scoped>
+.el-main{
+  background: #f5f5f5;
+}
 .layout{
   &-main{
     height: 100%;

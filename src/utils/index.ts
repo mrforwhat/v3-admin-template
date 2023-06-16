@@ -30,10 +30,10 @@ export const getFlatMenuList = (
   menuList: RouteRecordRaw[],
   result: RouteRecordRaw[] = []
 ) => {
-  menuList.forEach((item) => {
-    if (!item.children) {
-      result.push(item);
-    } else {
+  let copyMenuList: RouteRecordRaw[] = JSON.parse(JSON.stringify(menuList))
+  copyMenuList.forEach((item) => {
+    result.push(item)
+    if(item.children) {
       getFlatMenuList(item.children, result);
     }
   });

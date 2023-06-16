@@ -17,12 +17,17 @@ export const initDynamicRoutes = async () => {
   }
 
   authStore.flatMenuList.forEach((item:any)=>{
+    // 防止重复注册
+    if(item.children) {
+      delete item.children
+    }
     if(item.component && typeof item.component == 'string') {
       item.component = modules[`/src/pages${item.component}.vue`]
     }
-    if(item.component) {
-      router.addRoute("layout", item)
-    }
+    // if(item.component) {
+    // }
+    router.addRoute("layout", item)
+
   })
 
   // router.addRoute("layout", {
