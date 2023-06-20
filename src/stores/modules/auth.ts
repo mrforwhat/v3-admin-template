@@ -21,6 +21,9 @@ export const useAuthStore = defineStore({
     async getAuthMenuList() {
         const list = await getAuthMenuListAPI()
         this.authMenuList = list
+    },
+    clearAuthMenuList() {
+      this.authMenuList = []
     }
   }
 });

@@ -12,6 +12,9 @@ import { useAuthStore } from "@/stores/modules/auth";
 const authStore = useAuthStore();
 const route = useRoute();
 const breadList = computed(() => {
+  if (!authStore.authMenuList.length) {
+    return [];
+  }
   let list: any[] = [];
   let currentRoute = route.matched[route.matched.length - 1];
   let homeRouter = authStore.breadcumbList["/home/index"][0];
